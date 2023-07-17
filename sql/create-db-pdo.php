@@ -2,7 +2,7 @@
 
 global $conn;
 
-require_once '../backend/connect-pdo.php';
+require_once 'connect/connect-pdo.php';
 
 $sql = "CREATE DATABASE ductv44_2";
 
@@ -14,4 +14,4 @@ try {
     die($PDOException->getMessage());
 }
 
-require_once '../backend/close-pdo.php';
+require_once 'connect/close-pdo.php';

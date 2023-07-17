@@ -2,7 +2,7 @@
 
 global $conn;
 
-require_once '../backend/connect-db-pdo.php';
+require_once 'connect/connect-db-pdo.php';
 
 $sql = "
     CREATE TABLE users (
@@ -22,4 +22,4 @@ try {
     die($PDOException->getMessage());
 }
 
-require_once '../backend/close-pdo.php';
+require_once 'connect/close-pdo.php';

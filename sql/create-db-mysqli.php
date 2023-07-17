@@ -2,7 +2,7 @@
 
 global $conn;
 
-require_once '../backend/connect-mysqli.php';
+require_once 'connect/connect-mysqli.php';
 
 $sql = "CREATE DATABASE ductv44";
 
@@ -14,4 +14,4 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating database: " . $conn->error;
 }
 
-require_once '../backend/close-mysqli.php';
+require_once 'connect/close-mysqli.php';

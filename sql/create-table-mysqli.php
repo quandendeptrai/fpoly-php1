@@ -2,7 +2,7 @@
 
 global $conn;
 
-require_once '../backend/connect-db-mysqli.php';
+require_once 'connect/connect-db-mysqli.php';
 
 $sql = "
     CREATE TABLE users (
@@ -22,4 +22,4 @@ if ($conn->query($sql) === TRUE) {
     echo "Error creating Table: " . $conn->error;
 }
 
-require_once '../backend/close-mysqli.php';
+require_once 'connect/close-mysqli.php';
