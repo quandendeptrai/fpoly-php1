@@ -1,5 +1,5 @@
 <?php
-    require_once 'backend/handle-form.php';
+require_once 'backend/handle-form.php';
 ?>
 
 <!doctype html>
