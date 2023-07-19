@@ -9,9 +9,9 @@ $sql = "CREATE DATABASE ductv44";
 // $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
-    echo "Database created successfully";
+    echo "Successfully";
 } else {
-    echo "Error creating database: " . $conn->error;
+    echo "Error: " . $conn->error;
 }
 
 require_once 'connect/close-mysqli.php';

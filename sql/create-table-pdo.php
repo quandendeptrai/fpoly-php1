@@ -17,7 +17,7 @@ $sql = "
 try {
     $conn->exec($sql);
 
-    echo "Table created successfully";
+    echo "Successfully";
 } catch (PDOException $PDOException) {
     die($PDOException->getMessage());
 }

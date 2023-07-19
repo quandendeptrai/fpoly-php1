@@ -9,7 +9,7 @@ $sql = "CREATE DATABASE ductv44_2";
 try {
     $conn->exec($sql);
 
-    echo "Database created successfully";
+    echo "Successfully";
 } catch (PDOException $PDOException) {
     die($PDOException->getMessage());
 }

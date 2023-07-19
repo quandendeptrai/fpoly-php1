@@ -17,9 +17,9 @@ $sql = "
 // $conn->query($sql);
 
 if ($conn->query($sql) === TRUE) {
-    echo "Table created successfully";
+    echo "Successfully";
 } else {
-    echo "Error creating Table: " . $conn->error;
+    echo "Error: " . $conn->error;
 }
 
 require_once 'connect/close-mysqli.php';
